@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Neural Nets**
 
-- 💬 Ask me about **Python, Machine Learning**
+- 💬 Ask me about **Data Science, Data Analytics, Machine Learning, Python**
 
 - 📫 How to reach me **varunvinodh25@gmail.com**
 

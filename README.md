@@ -25,21 +25,24 @@ I have a passion for documenting my work, which can be found on my [blog](https:
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-  <a href="https://kaggle.com/varunvinodh" target="blank">
-    <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png" alt="varunvinodh" height="30" width="40" />
-  </a>
   <a href="https://twitter.com/Varunvinodh_" target="blank">
-    <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg" alt="Varunvinodh_" height="30" width="40" />
+    <img align="center" src="https://github.com/varunvinodh/varunvinodh/blob/main/icons/twitter.svg" alt="Varunvinodh_" height="30" width="40" />
+  </a>
+  <a href="https://github.com/varunvinodh/varunvinodh" target="blank">
+    <img align="center" src="https://github.com/varunvinodh/varunvinodh/blob/main/icons/github-mark.svg" alt="Varunvinodh_" height="30" width="40" />
   </a>
   <a href="https://www.hackerrank.com/varunvinodh25" target="blank">
-    <img align="center" src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="varunvinodh25" height="30" width="40" />
+    <img align="center" src="https://github.com/varunvinodh/varunvinodh/blob/main/icons/hackerrank.svg" alt="varunvinodh25" height="30" width="40" />
+  </a>
+  <a href="https://kaggle.com/varunvinodh" target="blank">
+    <img align="center" src="https://github.com/varunvinodh/varunvinodh/blob/main/icons/kaggle.svg" alt="varunvinodh" height="30" width="40" />
   </a>
 </p>
 
-**📕 Latest dev.to posts [@varunvinodh](https://dev.to/varunvinodh)**
+**📕 Latest Projects: [@varunvinodh](https://github.com/varunvinodh?tab=repositories)**
 <!-- BLOG-POST-LIST:START -->
-- [Insights from my FPL Data Project](https://dev.to/varunvinodh/insights-from-my-fpl-data-project)
-- [Exploring Football Data Science](https://dev.to/varunvinodh/exploring-football-data-science)
+- [Insights from my FPL Data Project](https://github.com/varunvinodh/Football/tree/main/FPL%20Analysis%20Dashboard)
+- [Exploring Football Data Science](https://github.com/varunvinodh/Footballttps://dev.to/varunvinodh/exploring-football-data-science)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Languages and Tools:</h3>

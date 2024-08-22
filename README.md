@@ -9,22 +9,25 @@
   </a> 
 </p>
 
-- 🤔 I’m looking for new opportunities in **Football Data Science**
+- 🤔 I’m looking for new opportunities in **Football Data Science**.
 
-- 🌱 I’m currently learning **Neural Networks**
+- 🌱 I’m currently learning **Neural Networks**.
 
-- 💬 Ask me about **Data Science, Data Analytics, Machine Learning, Python**
+- 💬 Ask me about **Data Science, Data Analytics, Machine Learning, Python**.
 
 - 📫 Reach me at **varunvinodh25@gmail.com**
 
-- 👨‍💻 All of my projects are available at [My Portfolio](https://linktr.ee/VarunVinodh)
+- 👨‍💻 All of my projects are available at [My Portfolio](https://github.com/varunvinodh?tab=repositories).
 
 - ⚡ Fun fact **I can talk about football data for hours!**
 
-I have a passion for documenting my work, which can be found on my [blog](https://linktr.ee/VarunVinodh).
+I have documented some of my work, which can be found on my [Repos](https://github.com/varunvinodh?tab=repositories).
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+  <a href="https://www.linkedin.com/in/varunvinodh/" target="blank">
+    <img align="center" src="https://github.com/varunvinodh/varunvinodh/blob/main/icons/LinkedIn.svg" alt="Varunvinodh_" height="30" width="40" />
+  </a>
   <a href="https://twitter.com/Varunvinodh_" target="blank">
     <img align="center" src="https://github.com/varunvinodh/varunvinodh/blob/main/icons/twitter.svg" alt="Varunvinodh_" height="30" width="40" />
   </a>
@@ -39,7 +42,7 @@ I have a passion for documenting my work, which can be found on my [blog](https:
   </a>
 </p>
 
-**📕 Latest Projects: [@varunvinodh](https://github.com/varunvinodh?tab=repositories)**
+**📘 Latest Projects:**
 <!-- BLOG-POST-LIST:START -->
 - [Insights from my FPL Data Project](https://github.com/varunvinodh/Football/tree/main/FPL%20Analysis%20Dashboard)
 - [Exploring Football Data Science](https://github.com/varunvinodh/Footballttps://dev.to/varunvinodh/exploring-football-data-science)

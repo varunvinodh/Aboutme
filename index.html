@@ -1,119 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Vinodh</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        .bg-custom-gray { background-color: #f7f7f7; }
+        .hero-bg { 
+            background: url('./icons/Background.jpg') no-repeat center center; 
+            background-size: cover; 
+            height: 80vh; /* Adjusted height for responsiveness */
+        }
+        .bg-about { 
+            background-color: #2e2e2e; /* Light gray background for About Me */
+        }
+        .bg-experience { 
+            background-color: #e0e4e8; /* Darker gray background for Experience & Education */
+        }
+        .bg-skills { 
+            background-color: #e0e4e8; /* Same background as Experience & Education */
+        }
+        .bg-projects { 
+            background-color: #f5f7f9; /* Lighter gray background for Projects */
+        }
+        .bg-contact { 
+            background-color: #d0d4d8; /* Darker gray background for Contact Information */
+        }
+        .skill-chart { 
+            background: linear-gradient(to right, #f0f4f8, #ffffff); 
+            border: 2px solid #e5e7eb; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+        }
+        header {
+            background-color: #f8f9fa; /* Subtle background color for header */
+        }
+        form input, form textarea {
+            border-radius: 8px;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Added shadow */
+        }
+        .bg-gray-50 img {
+            border-radius: 12px; /* Rounded corners for images */
+        }
     </style>
 </head>
-<body class="bg-custom-gray text-gray-800">
-    <header class="bg-white border-b border-gray-200 py-4">
+<body class="text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
         <div class="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
             <h1 class="text-3xl font-bold">Varun Vinodh</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-blue-500 hover:underline">About</a></li>
+                    <li><a href="#experience" class="text-blue-500 hover:underline">Experience</a></li>
+                    <li><a href="#skills" class="text-blue-500 hover:underline">Skills</a></li>
+                    <li><a href="#projects" class="text-blue-500 hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="text-blue-500 hover:underline">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     
-    <main class="flex flex-col min-h-screen">
-        <!-- About Me and Interests Section -->
-        <section class="bg-white py-12">
-            <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center">
-                <!-- Update image URL to the direct link -->
-                <img class="w-32 h-32 rounded-full mb-4" src="./icons/Profilepic.jpg" alt="Varun Vinodh">
-                <h2 class="text-2xl font-semibold mb-2">About Me</h2>
-                <p class="text-center mb-4">I am a dedicated Data Scientist with a strong background in data analysis and machine learning. My journey in data science began in 2019 and has since been marked by a commitment to transforming complex data into actionable insights. I am dedicated to leveraging data to facilitate informed decision-making and drive positive change in diverse industries.</p>
-                <h3 class="text-xl font-medium mb-2">Interests</h3>
-                <ul class="list-disc list-inside text-center">
-                    <li>Data Exploration, Statistical Modeling, Football, Traveling</li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- Work Experience Section -->
-        <section class="bg-white py-12">
-            <div class="max-w-screen-xl mx-auto px-4">
-                <h2 class="text-xl font-medium mb-4">Work Experience</h2>
-                <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
-                        <h4 class="text-lg font-semibold">Data Scientist and Team Lead</h4>
-                        <p class="text-gray-600 font-semibold">AIDAS Technologies Inc., May 2022 - August 2024</p>
-                        <p class="text-gray-600">As a Data Scientist at AIDAS, I led the ML package development for our web product. Designed a recommendation model, enhancing customer engagement and sales. Specialized in healthcare RCM, predicting claim denials, and developing an insurance payment model. Demonstrated leadership by leading teams, providing mentorship, and contributing as a Technical Recruiter for the Data Analytics team.</p>
-                        <h4 class="text-lg font-semibold">Data Analyst</h4>
-                        <p class="text-gray-600 font-semibold">InstaDataHelp Analytics Services, Sept 2021 - April 2022</p>
-                        <p class="text-gray-600">As a Data Analyst at InstadataHelp, I achieved performance gains through model optimization and collaborated on impactful projects with a Senior Data Scientist.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Education Section -->
-        <section class="bg-white py-12">
-            <div class="max-w-screen-xl mx-auto px-4">
-                <h2 class="text-xl font-medium mb-4">Education</h2>
-                <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
-                    <div class="bg-gray-50 p-4 rounded-lg shadow-md mb-4">
-                        <h4 class="text-lg font-semibold">PGD Data Science</h4>
-                        <p class="text-gray-600">Manipal University, 2019 - 2021</p>
-                        <h4 class="text-lg font-semibold">Bachelor's Degree in Computer Application (BCA)</h4>
-                        <p class="text-gray-600">Sri Krishna Arts and Science College, 2016 - 2019</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg text-grey min-h-screen flex items-center justify-center bg-cover bg-center">
+    <!--<section id="hero" class="hero-bg text-grey flex items-center justify-center bg-cover bg-center">-->
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4 text-white">Welcome to My Portfolio</h2>
+            <p class="text-lg mb-6 text-white">Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
+            <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Get in Touch</a>
+        </div>
+    </section>
 
-        <!-- Contact Information Section -->
-        <section class="bg-white py-12">
-            <div class="max-w-screen-xl mx-auto px-4">
-                <h2 class="text-2xl font-semibold mb-6">Contact Information</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Contact Form -->
-                    <div>
-                        <h3 class="text-xl font-medium mb-4">Contact Form</h3>
-                        <form action="#" method="post" class="space-y-4">
-                            <div>
-                                <label for="name" class="block text-gray-700">Name</label>
-                                <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg" required>
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-700">Email</label>
-                                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg" required>
-                            </div>
-                            <div>
-                                <label for="message" class="block text-gray-700">Message</label>
-                                <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded-lg" required></textarea>
-                            </div>
-                            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send</button>
-                        </form>
+    <!-- About Me Section -->
+    <section id="about" class="bg-about py-12 flex items-center">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <h2 class="text-3xl text-white font-semibold mb-4">About Me</h2>
+            <img class="w-40 h-40 rounded-full mx-auto mb-4" src="./icons/Profilepic.jpg" alt="Varun Vinodh">
+            <p class="text-white mb-4">I am a dedicated Data Scientist with a strong background in data analysis and machine learning. My journey in data science began in 2019 and has since been marked by a commitment to transforming complex data into actionable insights.</p>
+            <h3 class="text-2xl text-white font-medium mb-2">Interests</h3>
+            <p class="text-white-600 text-white">Football, Traveling, Data</p>
+        </div>
+    </section>
+    
+    <!-- Experience & Education Section -->
+    <section id="experience" class="bg-experience py-12">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Experience & Education</h2>
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-1 bg-blue-500 h-full"></div>
+                </div>
+                <div class="space-y-8">
+                    <!-- Experience -->
+                    <div class="relative">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-semibold">Data Scientist and Team Lead</h3>
+                            <p class="text-gray-600 font-semibold">AIDAS Technologies Inc., May 2022 - August 2024</p>
+                            <p class="text-gray-600">Led ML package development, designed a recommendation model, and specialized in healthcare RCM.</p>
+                        </div>
                     </div>
-                    <!-- Contact Info -->
-                    <div>
-                        <h3 class="text-xl font-medium mb-4">Contact Information</h3>
-                        <ul class="space-y-4">
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v2a2 2 0 01-2 2h-2m-6 4H7a2 2 0 01-2-2v-2a2 2 0 012-2h2m6-4h2a2 2 0 012 2v2a2 2 0 01-2 2h-2"></path>
-                                </svg>
-                                <span>Phone: (+91) 97465 40798</span>
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3V3z"></path>
-                                </svg>
-                                <span>Email: varunvinodh25@gmail.com</span>
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 11.5V20H3V4h15v6h3.5l3.5 3.5zM3 16h18V7.5h-5.5L9.5 8v7H3v1.5z"></path>
-                                </svg>
-                                <span>LinkedIn: <a href="https://www.linkedin.com/in/varunvinodh" class="text-blue-500">linkedin.com/in/varunvinodh</a></span>
-                            </li>
-                        </ul>
+                    <div class="relative">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-semibold">Data Analyst</h3>
+                            <p class="text-gray-600 font-semibold">InstaDataHelp Analytics Services, Sept 2021 - April 2022</p>
+                            <p class="text-gray-600">Achieved performance gains through model optimization and collaborated on impactful projects.</p>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div class="relative">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h3 class="text-xl font-semibold">PGD Data Science</h3>
+                            <p class="text-gray-600">Manipal University, 2019 - 2021</p>
+                            <h3 class="text-xl font-semibold mt-4">Bachelor's Degree in Computer Application (BCA)</h3>
+                            <p class="text-gray-600">Sri Krishna Arts and Science College, 2016 - 2019</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="bg-skills py-12">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
+                    <h4 class="text-lg font-semibold mb-4">Programming Languages</h4>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex justify-between">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>R</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
+                    <h4 class="text-lg font-semibold mb-4">Data Science Tools</h4>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex justify-between">
+                            <span>Scikit-learn</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>TensorFlow</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
+                    <h4 class="text-lg font-semibold mb-4">Data Visualization</h4>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex justify-between">
+                            <span>Tableau</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Excel</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
+                    <h4 class="text-lg font-semibold mb-4">Other Skills</h4>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex justify-between">
+                            <span>PowerBI/ Tableau</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Github/ Azure DevOps</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="bg-projects py-12">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://github.com/varunvinodh/Football/blob/main/FPL%20Analysis%20Dashboard/FPL_Dashboard.png" alt="Project 1" class="w-full h-32 object-cover mb-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">FPL Analysis Dashboard</h4>
+                    <p class="text-gray-600 mb-2">This project features an interactive dashboard that analyzes Fantasy Premier League data. It provides insights into player performance, cost-effectiveness, and strategic recommendations to help you build a winning team efficiently.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View More</a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://github.com/varunvinodh/Football/blob/main/FPL%20Analysis%20Dashboard/Analysis.png" alt="Project 2" class="w-full h-32 object-cover mb-4 rounded-lg">
+                    <h4 class="text-lg font-semibold mb-2">Customer Segmentation and Product Recommendation</h4>
+                    <p class="text-gray-600 mb-2">This project explores and analyzes customer transaction data to gain insights into customer behavior. It includes exploratory data analysis, data preprocessing, machine learning for predictive tasks, customer segmentation through clustering, and a recommendation system to enhance cross-selling and satisfaction.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View More</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Information Section -->
+    <section id="contact" class="bg-contact py-12">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Contact Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div>
+                    <form action="#" method="post" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Send</button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-medium mb-4">Contact Information</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v2a2 2 0 01-2 2h-2m-6 4H7a2 2 0 01-2-2v-2a2 2 0 012-2h2m6-4h2a2 2 0 012 2v2a2 2 0 01-2 2h-2"></path>
+                            </svg>
+                            <span>Phone: (+91) 97465 40798</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3V3z"></path>
+                            </svg>
+                            <span>Email: <a href="mailto:varunvinodh25@gmail.com" class="text-blue-500">varunvinodh25@gmail.com</a></span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 11.5V20H3V4h15v6h3.5l3.5 3.5zM3 16h18V7.5h-5.5L9.5 8v7H3v1.5z"></path>
+                            </svg>
+                            <span>LinkedIn: <a href="https://www.linkedin.com/in/varunvinodh" class="text-blue-500">linkedin.com/in/varunvinodh</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

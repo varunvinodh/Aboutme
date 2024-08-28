@@ -12,19 +12,19 @@
             height: 80vh; /* Adjusted height for responsiveness */
         }
         .bg-about { 
-            background-color: #2e2e2e; /* Light gray background for About Me */
+            background-color: #2e2e2e; /* Dark gray background for About Me */
         }
         .bg-experience { 
-            background-color: #e0e4e8; /* Darker gray background for Experience & Education */
+            background-color: #e0e4e8; /* Light gray background for Experience & Education */
         }
         .bg-skills { 
-            background-color: #e0e4e8; /* Same background as Experience & Education */
+            background-color: #f5f7f9; /* Lighter gray background for Skills */
         }
         .bg-projects { 
-            background-color: #f5f7f9; /* Lighter gray background for Projects */
+            background-color: #f5f7f9; /* Same background color for Projects */
         }
         .bg-contact { 
-            background-color: #d0d4d8; /* Darker gray background for Contact Information */
+            background-color: #d0d4d8; /* Light gray background for Contact Information */
         }
         .skill-chart { 
             background: linear-gradient(to right, #f0f4f8, #ffffff); 
@@ -43,7 +43,7 @@
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="text-gray-600">
     <!-- Header Section -->
     <header class="bg-white shadow-md py-4">
         <div class="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
@@ -65,7 +65,24 @@
         <div class="text-center">
             <h2 class="text-4xl font-bold mb-4 text-white">Hello World 👋🏼!! I'm Varun Vinodh.</h2>
             <p class="text-lg mb-6 text-white">Data Scientist 🚀| Machine Learning Enthusiast 📝| Problem Solver 🌟</p>
-            <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Get in Touch 🤝</a>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/varunvinodh/" target="_blank">
+                    <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/linkedin-Grey.png" alt="LinkedIn Logo" class="h-10 w-10">
+                </a>
+                <a href="https://github.com/varunvinodh" target="_blank">
+                    <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/github-Gray.png" alt="GitHub Logo" class="h-10 w-10">
+                </a>
+                <a href="https://twitter.com/Varunvinodh_" target="_blank">
+                    <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/twitterx-Gray.png" alt="Twitter Logo" class="h-10 w-10">
+                </a>
+            </div>
+            <div class="text-center mt-8">
+                <a href="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/Resume/VarunVinodh_DataScientist_Resume.pdf" download="VarunVinodh_Resume.pdf" class="inline-flex items-center px-6 py-3 bg-black-200 text-white rounded-lg hover:bg-gray-500 text-sm">
+                    <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/download-Grey-48.png" alt="Download" class="h-4 w-4 mr-1">
+                    Resume
+                </a>
+            </div>
+            
         </div>
     </section>
 
@@ -80,7 +97,6 @@
         </div>
     </section>
         
-    <!-- Experience & Education Section -->
     <!-- Experience & Education Section -->
     <section id="experience" class="bg-experience py-12">
         <div class="max-w-screen-xl mx-auto px-4">
@@ -121,9 +137,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <!-- Skills Section -->
     <section id="skills" class="bg-skills py-12">
@@ -171,7 +184,7 @@
                         </div>
                         
                         <div class="flex justify-between">
-                            <span>TensorFlow/ Pytorch/ FastAI</span>
+                            <span>TensorFlow/ Pytorch/ Mlxtend</span>
                             <span>75%</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full">
@@ -195,7 +208,7 @@
                             <span>80%</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full">
-                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 80%;"></div>
                         </div>
                     </div>
                 </div>
@@ -215,13 +228,14 @@
                             <span>90%</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full">
-                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 90%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     
     <!-- Projects Section -->
     <section id="projects" class="bg-projects py-12">
@@ -251,9 +265,7 @@
             </div>
         </div>
     </section>
-    
-    <!-- Contact Information Section -->
-     
+         
     <!-- Contact Information Section -->
     <section id="contact" class="bg-contact py-12">
         <div class="max-w-screen-xl mx-auto px-4">
@@ -310,5 +322,12 @@
             </div>
         </div>
     </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Varun Vinodh. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

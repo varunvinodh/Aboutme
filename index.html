@@ -63,26 +63,63 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-bg text-grey min-h-screen flex items-center justify-center bg-cover bg-center">
         <div class="text-center">
+            
+            
             <h2 class="text-4xl font-bold mb-4 text-white">Hello World 👋🏼!! I'm Varun Vinodh.</h2>
+            
+            
             <p class="text-lg mb-6 text-white">Data Scientist 🚀| Machine Learning Enthusiast 📝| Problem Solver 🌟</p>
             <div class="flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/varunvinodh/" target="_blank">
+                <a href="https://www.linkedin.com/in/varunvinodh/" target="_blank" class="social-icon">
                     <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/linkedin-Grey.png" alt="LinkedIn Logo" class="h-10 w-10">
                 </a>
-                <a href="https://github.com/varunvinodh" target="_blank">
+                <a href="https://github.com/varunvinodh" target="_blank" class="social-icon">
                     <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/github-Gray.png" alt="GitHub Logo" class="h-10 w-10">
                 </a>
-                <a href="https://twitter.com/Varunvinodh_" target="_blank">
+                <a href="https://twitter.com/Varunvinodh_" target="_blank" class="social-icon">
                     <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/twitterx-Gray.png" alt="Twitter Logo" class="h-10 w-10">
                 </a>
             </div>
+            
+            <style>
+                .social-icon img {
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+            
+                .social-icon:hover img {
+                    transform: scale(1.2); /* Slightly increase the size */
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+                }
+            </style>
+            
             <div class="text-center mt-8">
-                <a href="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/Resume/VarunVinodh_DataScientist_Resume.pdf" download="VarunVinodh_Resume.pdf" class="inline-flex items-center px-6 py-3 bg-black-200 text-white rounded-lg hover:bg-gray-500 text-sm">
-                    <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/download-Grey-48.png" alt="Download" class="h-4 w-4 mr-1">
+                <a href="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/Resume/VarunVinodh_DataScientist_Resume.pdf" download="VarunVinodh_Resume.pdf" class="resume-button inline-flex items-center px-6 py-3 bg-black-200 text-white rounded-lg hover:bg-gray-600 text-sm transition-all duration-300">
+                    <img src="https://raw.githubusercontent.com/varunvinodh/Aboutme/main/icons/download-Grey-48.png" alt="Download" class="download-icon h-4 w-4 mr-1">
                     Resume
                 </a>
             </div>
             
+            <style>
+                /* Button Hover Styling */
+                .resume-button {
+                    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+                }
+            
+                .resume-button:hover {
+                    transform: scale(1.05); /* Slightly increase the button size */
+                    background-color: #4A5568; /* Darker gray background on hover */
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+                }
+            
+                /* Download Icon Styling */
+                .download-icon {
+                    transition: transform 0.3s ease;
+                }
+            
+                .resume-button:hover .download-icon {
+                    transform: translateY(-2px); /* Slight "pop-out" effect */
+                }
+            </style>            
         </div>
     </section>
 
@@ -91,9 +128,12 @@
         <div class="max-w-screen-xl mx-auto px-4 text-center">
             <h2 class="text-3xl text-white font-semibold mb-4">About Me</h2>
             <img class="w-40 h-40 rounded-full mx-auto mb-4" src="./icons/Profilepic.jpg" alt="Varun Vinodh">
-            <p class="text-white mb-4">I am a dedicated Data Scientist with a strong background in data analysis and machine learning. My journey in data science began in 2019 and has since been marked by a commitment to transforming complex data into actionable insights.</p>
+            <p class="text-white mb-4">Since 2019, I’ve been immersed in the world of data science, using my expertise in machine learning, predictive analytics 📊, and data-driven problem-solving 💡 to create tangible value across diverse industries. From optimizing healthcare revenue cycles to building recommendation engines that boost engagement and sales, my focus is always on transforming complex data into clear, actionable insights 🎯.</p>
+
+            <p class="text-white mb-4">I thrive in environments where data plays a pivotal role in decision-making, and I’m always eager to tackle new challenges, explore emerging technologies like NLP and GenAI, and make a lasting impact with innovative solutions. Whether leading teams or collaborating with fellow data enthusiasts, I believe in the power of data to unlock new opportunities and drive positive change 🌍.</p>
+                
             <h3 class="text-2xl text-white font-medium mb-2">Interests</h3>
-            <p class="text-white">Football, Traveling, Data</p>
+            <p class="text-white">Football⚽, Traveling🗺️, Data 🗃️</p>
         </div>
     </section>
         
@@ -107,19 +147,56 @@
                     <div class="w-1 bg-blue-500 h-full"></div>
                 </div>
                 <div class="space-y-8">
-                    <!-- Experience -->
+
+                    <!-- Experience Section with Dynamic Month Calculation -->
+                    <div class="space-y-8">
+                        <!-- Example Experience -->
+                        <div class="relative">
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                                <h3 class="text-xl font-semibold">MLOps Engineer</h3>
+                                <p class="text-gray-600 font-semibold" id="anheuser-dates">Anheuser-Busch InBev, Sept 2024 - Present</p>
+                                <p class="text-gray-600" id="anheuser-duration"></p>
+                                <p class="text-gray-600">As an MLOps Engineer at Anheuser-Busch InBev, I focus on model deployment, monitoring, and maintenance of machine learning models. I collaborate closely with the Data Science team to ensure seamless integration of ML solutions into production environments. My role involves connecting with stakeholders to provide technical support and optimize ML operations to enhance efficiency and performance.</p>
+                                    <p class="text-gray-600 mt-4"><strong>Technologies Used:</strong> Python, Azure Data Factory, Azure Databricks, Azure Data Lake, SQL (SSMS), Excel, Git, ServiceNow.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        // Function to calculate the number of months between two dates
+                        function calculateMonths(startDate, endDate) {
+                            let start = new Date(startDate);
+                            let end = new Date(endDate);
+
+                            let years = end.getFullYear() - start.getFullYear();
+                            let months = end.getMonth() - start.getMonth() + (years * 12);
+                            
+                            return months;
+                        }
+
+                        // Set the start date (example: September 2024)
+                        const startDate = "2024-09-01"; // YYYY-MM-DD format
+                        const currentDate = new Date(); // Current date for "Present"
+
+                        // Get the duration in months
+                        const monthsWorked = calculateMonths(startDate, currentDate);
+
+                        // Display the results
+                        document.getElementById('anheuser-dates').innerHTML = `Anheuser-Busch InBev, Sept 2024 - Present (${monthsWorked}+ months)`;
+                        document.getElementById('anheuser-duration').innerHTML = `Duration: ${monthsWorked} months`;
+                    </script>
+
                     <div class="relative">
                         <div class="bg-white p-6 rounded-lg shadow-lg">
                             <h3 class="text-xl font-semibold">Data Scientist and Team Lead</h3>
-                            <p class="text-gray-600 font-semibold">AIDAS Technologies Inc., May 2022 - August 2024</p>
+                            <p class="text-gray-600 font-semibold">AIDAS Technologies Inc., May 2022 - August 2024 (2.3 years)</p>
                             <p class="text-gray-600">As a Data Scientist at AIDAS, I led the development of machine learning packages for the company's web product and specialized in Predictive ML Modeling in healthcare revenue cycle management (RCM). I designed a personalized recommendation model that significantly enhanced customer engagement and sales. In February 2024, I was promoted to Team Lead, where I managed and mentored the Analytics team. I also implemented NLP models for operational efficiency and contributed as a Technical Recruiter for our Analytics Team. My leadership and technical contributions were recognized with the Best Performing Employee award for Q3 2023.</p>
-                            <p class="text-gray-600 mt-4"><strong>Technologies Used:</strong> Python, SQL (SSMS), Excel, ML (scikit-learn, TensorFlow), NLP, Azure DevOps, Git, Jira, Agile Methodology.</p>
+                            <p class="text-gray-600 mt-4"><strong>Technologies Used:</strong> Python/Jupyter , SQL (SSMS), Excel, ML (scikit-learn, TensorFlow), NLP, Azure DevOps, Git, Jira, Agile Methodology.</p>
                         </div>
                     </div>
                     <div class="relative">
                         <div class="bg-white p-6 rounded-lg shadow-lg">
                             <h3 class="text-xl font-semibold">Data Analyst</h3>
-                            <p class="text-gray-600 font-semibold">InstaDataHelp Analytics Services, Sept 2021 - April 2022</p>
+                            <p class="text-gray-600 font-semibold">InstaDataHelp Analytics Services, Sept 2021 - April 2022 (8 months)</p>
                             <p class="text-gray-600">During my tenure at InstaDataHelp, I worked on impactful data analytics projects using Python and PowerBI/Tableau to gain insights and present them. I worked closely with a Senior Data Scientist on web scraping, data preprocessing, and the development of machine learning models.</p>
                             <p class="text-gray-600 mt-4"><strong>Technologies Used:</strong> Python, ML (scikit-learn, TensorFlow), Selenium/BeautifulSoup, PowerBI/Tableau.</p>
                         </div>
@@ -138,14 +215,16 @@
         </div>
     </section>
 
+
     <!-- Skills Section -->
     <section id="skills" class="bg-skills py-12">
         <div class="max-w-screen-xl mx-auto px-4">
             <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Skill Card 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
-                    <h4 class="text-lg font-semibold mb-4">Programming Languages</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Skill Card 1: Programming Languages -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 transform skill-chart text-gray-550">
+                    <h4 class="text-lg font-semibold mb-4 transition-all duration-200 ease-in-out hover:text-gray-500">Programming Languages</h4>
                     <div class="flex flex-col space-y-2">
                         <div class="flex justify-between">
                             <span>Python</span>
@@ -163,9 +242,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Skill Card 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
-                    <h4 class="text-lg font-semibold mb-4">Data Science Tools</h4>
+
+                <!-- Skill Card 2: Data Science Tools -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 transform skill-chart text-gray-550">
+                    <h4 class="text-lg font-semibold mb-4 transition-all duration-200 ease-in-out hover:text-gray-500">Data Science Tools</h4>
                     <div class="flex flex-col space-y-2">
                         <div class="flex justify-between">
                             <span>Pandas/ Numpy</span>
@@ -174,7 +254,6 @@
                         <div class="w-full bg-gray-200 rounded-full">
                             <div class="bg-gray-500 h-2 rounded-full" style="width: 90%;"></div>
                         </div>
-
                         <div class="flex justify-between">
                             <span>Scikit-learn</span>
                             <span>90%</span>
@@ -182,7 +261,6 @@
                         <div class="w-full bg-gray-200 rounded-full">
                             <div class="bg-gray-500 h-2 rounded-full" style="width: 90%;"></div>
                         </div>
-                        
                         <div class="flex justify-between">
                             <span>TensorFlow/ Pytorch/ Mlxtend</span>
                             <span>75%</span>
@@ -192,9 +270,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Skill Card 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
-                    <h4 class="text-lg font-semibold mb-4">Data Analysis & Visualization</h4>
+
+                <!-- Skill Card 3: Data Analysis & Visualization -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 transform skill-chart text-gray-550">
+                    <h4 class="text-lg font-semibold mb-4 transition-all duration-200 ease-in-out hover:text-gray-500">Data Analysis & Visualization</h4>
                     <div class="flex flex-col space-y-2">
                         <div class="flex justify-between">
                             <span>Excel</span>
@@ -212,19 +291,27 @@
                         </div>
                     </div>
                 </div>
-                <!-- Skill Card 4 -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md skill-chart">
-                    <h4 class="text-lg font-semibold mb-4">Project Management</h4>
+
+                <!-- Skill Card 4: Project Management & Cloud Tools -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 transform skill-chart text-gray-550">
+                    <h4 class="text-lg font-semibold mb-4 transition-all duration-200 ease-in-out hover:text-gray-500">Project Management & Cloud Tools</h4>
                     <div class="flex flex-col space-y-2">
                         <div class="flex justify-between">
-                            <span>Github/ Azure DevOps</span>
+                            <span>GitHub/ Azure DevOps</span>
                             <span>80%</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full">
                             <div class="bg-gray-500 h-2 rounded-full" style="width: 80%;"></div>
                         </div>
                         <div class="flex justify-between">
-                            <span> Agile Methodology/ Jira</span>
+                            <span>Agile Methodology/ Jira</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>ServiceNow</span>
                             <span>90%</span>
                         </div>
                         <div class="w-full bg-gray-200 rounded-full">
@@ -232,39 +319,78 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Skill Card 5: Cloud Services -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-300 transform skill-chart text-gray-550">
+                    <h4 class="text-lg font-semibold mb-4 transition-all duration-200 ease-in-out hover:text-gray-500">Cloud Services</h4>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex justify-between">
+                            <span>Azure Data Factory</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Azure Databricks</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Azure Data Lake</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full">
+                            <div class="bg-gray-500 h-2 rounded-full" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    
-    
+
+
     <!-- Projects Section -->
     <section id="projects" class="bg-projects py-12">
         <div class="max-w-screen-xl mx-auto px-4">
             <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">FPL Data Insights Dashboard</h3>
+                
+                <!-- FPL Data Insights Dashboard Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold mb-2 transition-all duration-200 ease-in-out hover:text-blue-500">FPL Data Insights Dashboard</h3>
                     <p class="text-gray-600 mb-4">A comprehensive analysis of Fantasy Premier League data to derive actionable insights and predictive models.</p>
-                    <a href="https://github.com/varunvinodh/Football/tree/main/FPL%20Analysis%20Dashboard" target="_blank" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://github.com/varunvinodh/Football/tree/main/FPL%20Analysis%20Dashboard" target="_blank" class="text-blue-500 hover:underline transition-all duration-200 ease-in-out hover:text-blue-400">View on GitHub</a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">Personalized Product Recommendation</h3>
+
+                <!-- Personalized Product Recommendation Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold mb-2 transition-all duration-200 ease-in-out hover:text-blue-500">Personalized Product Recommendation</h3>
                     <p class="text-gray-600 mb-4">Explored and analyzed customer transaction data to understand behavior, segment customers, and develop a recommendation system for tailored product suggestions and enhanced satisfaction.</p>
-                    <a href="https://github.com/varunvinodh/Customer-Marketing-Data" target="_blank" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://github.com/varunvinodh/Customer-Marketing-Data" target="_blank" class="text-blue-500 hover:underline transition-all duration-200 ease-in-out hover:text-blue-400">View on GitHub</a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">Video Games Sales Prediction</h3>
+
+                <!-- Video Games Sales Prediction Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold mb-2 transition-all duration-200 ease-in-out hover:text-blue-500">Video Games Sales Prediction</h3>
                     <p class="text-gray-600 mb-4">Analyzed global video game sales data to compare console performance and predict sales trends using machine learning models.</p>
-                    <a href="https://github.com/varunvinodh/VideoGamesSales-project" target="_blank" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://github.com/varunvinodh/VideoGamesSales-project" target="_blank" class="text-blue-500 hover:underline transition-all duration-200 ease-in-out hover:text-blue-400">View on GitHub</a>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-2">FIFA 19 Data Analysis</h3>
+
+                <!-- FIFA 19 Data Analysis Card -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
+                    <h3 class="text-xl font-semibold mb-2 transition-all duration-200 ease-in-out hover:text-blue-500">FIFA 19 Data Analysis</h3>
                     <p class="text-gray-600 mb-4">Leveraged passion for football and data analysis to explore the FIFA 19 dataset, uncovering insights on player performance, team dynamics, and attribute correlations. Analyzed player statistics from the 2018-2019 season to reveal patterns and trends.</p>
-                    <a href="https://github.com/varunvinodh/Football/tree/main/Fifa19%20Analysis" target="_blank" class="text-blue-500 hover:underline">View on GitHub</a>
+                    <a href="https://github.com/varunvinodh/Football/tree/main/Fifa19%20Analysis" target="_blank" class="text-blue-500 hover:underline transition-all duration-200 ease-in-out hover:text-blue-400">View on GitHub</a>
                 </div>
+
             </div>
         </div>
     </section>
+
          
     <!-- Contact Information Section -->
     <section id="contact" class="bg-contact py-12">
@@ -273,7 +399,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
-                    <form action="mailto:varunvinodh98@gmail.com?subject=IMPORTANT%20PORTFOLIO%20MESSAGE" method="post" enctype="text/plain">
+                    <form action="mailto:varunvinodh25@gmail.com?subject=IMPORTANT%20PORTFOLIO%20MESSAGE" method="post" enctype="text/plain">
                         <div class="mb-4">
                             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                             <input type="text" id="name" name="name" required class="mt-1 block w-full p-3 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
@@ -296,7 +422,7 @@
                             <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            <span>Email: varunvinodh98@gmail.com</span>
+                            <span>Email: varunvinodh25@gmail.com</span>
                         </li>
                         <li class="flex items-center">
                             <svg class="w-6 h-6 mr-3 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
